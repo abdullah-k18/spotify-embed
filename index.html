@@ -1,0 +1,48 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="styles.css">
+    <link rel="shortcut icon" href="images/spotify.png" type="image/x-icon" />
+    <title>My Spotify</title>
+</head>
+<body>
+<div class="container">
+    <h1>My Favorite</h1>
+    <div class="profiles">
+        <div class="profile" onclick="ArtistScreen()">
+            <img src="images/artist.png" alt="Profile 1">
+            <div class="profile-name">Artists</div>
+        </div>
+        <div class="profile" onclick="SongsScreen()">
+            <img src="images/songs.jpg" alt="Profile 2">
+            <div class="profile-name">Songs</div>
+        </div>
+        <div class="profile" onclick="PlaylistScreen()">
+            <img src="images/playlist.png" alt="Profile 2">
+            <div class="profile-name">Playlists</div>
+        </div>
+        <div class="profile" onclick="AlbumScreen()">
+            <img src="images/album.png" alt="Profile 2">
+            <div class="profile-name">Albums</div>
+        </div>
+    </div>
+</div>
+
+<script>
+    function ArtistScreen() {
+        window.location.href = "artists.html"
+    }
+    function SongsScreen() {
+        window.location.href = "songs.html"
+    }
+    function PlaylistScreen() {
+        window.location.href = "playlists.html"
+    }
+    function AlbumScreen() {
+        window.location.href = "albums.html"
+    }
+</script>
+</body>
+</html>
